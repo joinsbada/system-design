@@ -1,5 +1,6 @@
 # system-design
-system-design
+
+System-Design is a common question to determine a complete understanding from System Design standpoint.
 
 > How to prepare system design questions for an IT company
 
@@ -8,6 +9,7 @@ System design is a very broad topic. Even a software engineer with many years of
 This repository only teaches you how to handle the system design interview with a systematic approach in a short time. You can dive into each topic if you have time. Of course, welcome to add your thoughts!
 
 ## <a name='toc'>Table of Contents</a>
+
 - [ ] [System Design Interview Tips](#tips)
 - [ ] [Basic Knowledge about System Design](#intro)
 - [ ] [Company Engineering Blogs](#blog)
@@ -30,7 +32,7 @@ per second, requests types, data written per second, data read per second.
 
 Sketch the important components and the connections between them, but don't go into some details. 
 Usually, a scalable system includes webserver (load balancer), service (service partition), database (primary/secondary database cluster plug cache).
- 
+
 **Component design**
 
 For each component, you need to write the specific APIs for each component. You may need to finish
@@ -155,40 +157,48 @@ There are some good references for each question. The references here are slides
 
 **Design a CDN network**  
 Reference:  
+
 * [Globally Distributed Content Delivery](https://kilthub.cmu.edu/articles/journal_contribution/Globally_distributed_content_delivery/6605972)
 
 **Design a Google document system**  
 Reference:  
+
 * [google-mobwrite](https://code.google.com/p/google-mobwrite/)
 * [Differential Synchronization](https://neil.fraser.name/writing/sync/)
 
 **Design a random ID generation system**  
 Reference: 
+
 * [Announcing Snowflake](https://blog.twitter.com/2010/announcing-snowflake) 
 * [snowflake](https://github.com/twitter/snowflake/)
 
 **Design a key-value database**  
 Reference:   
+
 * [Introduction to Redis](http://www.slideshare.net/dvirsky/introduction-to-redis)
 
 **Design the Facebook news feed function**   
 Reference:   
+
 * [What are best practices for building something like a News Feed?](http://www.quora.com/What-are-best-practices-for-building-something-like-a-News-Feed) 
 * [What are the scaling issues to keep in mind while developing a social network feed?](http://www.quora.com/Activity-Streams/What-are-the-scaling-issues-to-keep-in-mind-while-developing-a-social-network-feed) 
 * [Activity Feeds Architecture](http://www.slideshare.net/danmckinley/etsy-activity-feeds-architecture)
 
 **Design the Facebook timeline function**   
 Reference: 
+
 * [Building Timeline](https://www.facebook.com/note.php?note_id=10150468255628920) 
 * [Facebook Timeline](http://highscalability.com/blog/2012/1/23/facebook-timeline-brought-to-you-by-the-power-of-denormaliza.html)
 
 **Design a function to return the top k requests during past time interval**   
 Reference:  
+
 * [Efficient Computation of Frequent and Top-k Elements in Data Streams](http://www.cse.ust.hk/~raywong/comp5331/References/EfficientComputationOfFrequentAndTop-kElementsInDataStreams.pdf)
 * [An Optimal Strategy for Monitoring Top-k Queries in Streaming Windows](http://davis.wpi.edu/xmdv/docs/EDBT11-diyang.pdf)
 
 **Design an online multiplayer card game**   
 Reference:  
+
 * [How to Create an Asynchronous Multiplayer Game](http://www.indieflashblog.com/how-to-create-an-asynchronous-multiplayer-game.html)   
 * [How to Create an Asynchronous Multiplayer Game Part 2: Saving the Game State to Online Database](http://www.indieflashblog.com/how-to-create-async-part2.html)  
 * [How to Create an Asynchronous Multiplayer Game Part 3: Loading Games from the Database](http://www.indieflashblog.com/how-to-create-async-part3.html)  
@@ -197,50 +207,60 @@ Reference:
 
 **Design a graph search function**   
 Reference:   
+
 * [Building out the infrastructure for Graph Search](https://www.facebook.com/notes/facebook-engineering/under-the-hood-building-out-the-infrastructure-for-graph-search/10151347573598920)
 * [Indexing and ranking in Graph Search](https://www.facebook.com/notes/facebook-engineering/under-the-hood-indexing-and-ranking-in-graph-search/10151361720763920) 
 * [The natural language interface of Graph Search](https://www.facebook.com/notes/facebook-engineering/under-the-hood-the-natural-language-interface-of-graph-search/10151432733048920) and [Erlang at Facebook](http://www.erlang-factory.com/upload/presentations/31/EugeneLetuchy-ErlangatFacebook.pdf)
 
 **Design a picture sharing system**   
 Reference:   
+
 * [Flickr Architecture](http://highscalability.com/flickr-architecture) 
 * [Instagram Architecture](http://highscalability.com/blog/2011/12/6/instagram-architecture-14-million-users-terabytes-of-photos.html)
 
 **Design a search engine**   
 Reference:  
+
 * [How would you implement Google Search?](http://programmers.stackexchange.com/questions/38324/interview-question-how-would-you-implement-google-search)  
 * [Implementing Search Engines](http://www.ardendertat.com/2012/01/11/implementing-search-engines/)
 
 **Design a recommendation system**  
 Reference:  
+
 * [Hulu’s Recommendation System](http://tech.hulu.com/blog/2011/09/19/recommendation-system.html)  
 * [Recommender Systems](http://ijcai13.org/files/tutorial_slides/td3.pdf)
 
 **Design a tinyurl system**    
 Reference: 
+
 * [System Design for Big Data-tinyurl](http://n00tc0d3r.blogspot.com/) 
 * [URL Shortener API](https://developers.google.com/url-shortener/?csw=1)
 
 **Design a garbage collection system**    
 Reference:   
+
 * [Baby's First Garbage Collector](http://journal.stuffwithstuff.com/2013/12/08/babys-first-garbage-collector/)
- 
+
 **Design a scalable web crawling system**    
 Reference:  
+
 * [How can I build a web crawler from scratch?](https://www.quora.com/How-can-I-build-a-web-crawler-from-scratch)
 
 **Design the Facebook chat function**    
 Reference:   
+
 * [Erlang at Facebook](http://www.erlang-factory.com/upload/presentations/31/EugeneLetuchy-ErlangatFacebook.pdf)  
 * [Facebook Chat](https://www.facebook.com/note.php?note_id=14218138919&id=9445547199&index=0)
 
 **Design a trending topic system**    
 Reference:  
+
 * [Implementing Real-Time Trending Topics With a Distributed Rolling Count Algorithm in Storm](http://www.michael-noll.com/blog/2013/01/18/implementing-real-time-trending-topics-in-storm/)   
 * [Early detection of Twitter trends explained](http://snikolov.wordpress.com/2012/11/14/early-detection-of-twitter-trends/)
- 
+
 **Design a cache system**    
 Reference:   
+
 * [Introduction to Memcached](http://www.slideshare.net/oemebamo/introduction-to-memcached)
 
 ### [[⬆]](#toc) <a name='bk'>Good Books:</a>
@@ -273,5 +293,82 @@ Use design patterns such that it can be reused in multiple applications.
 #### Useful Websites
 
 * [101 Design Patterns & Tips for Developers](http://sourcemaking.com/design-patterns-and-tips)
+
+
+
+
+
+**TOP Courses useful to learn Problem Solving & Data Structures**
+
+1. Mastering Data Structures & Algorithms using C and C++ by Abdul Bari - Udemy
+2. Data Structures for Coding Interviews in Java by Coderust - EducativeIO
+3. Grokking the Coding Interview: Patterns for Coding Questions - EducativeIO
+4. Coderust: Hacking the Coding Interview - EducativeIO
+5. Algorithms for Coding Interviews in Java by Coderust - EducativeIO
+6. Graph Theory Algorithms by William Fiset - Udemy
+
+
+
+**Best CODING PLATFORMS that you can use for practice**
+
+1. LeetCode (Most used)
+2. GeeksForGeeks (Most used)
+3. HackerRank
+4. CodeChef
+5. HackerEarth
+6. Sphere Online Judge
+7. InterviewBit
+8. TopCoder
+9. Uva Online Judge
+10. MyCodeSchool
+11. DEVMATES
+12. CodingBat
+
+
+
+**12 Frequently used Tools for System Design - Interviews**
+
+1. Load Balancing - Amazon's ELB
+2. Content Delivery Network (CDN) - CloudFlare, CloudFront
+3. SQL Datastores - PostgreSQL, MySQL, MSSQL
+4. NoSQL (Doc Oriented) - Elasticsearch, MongoDB, Lucene
+5. NoSQL (Wide Column) - Cassandra, HBase, Big Table
+6. Cache Stores (Key Value) - Redis, Memcached, Dynamo DB
+7. NoSQL (Graph) - Neo4j
+8. File Storage (DFS) - Hadoop, Azure Disks, Amazon EFS
+9. Object Storage - Amazon S3, Azure Blob
+10. Block Storage - Amazon EBS, Azure Files
+11. Messaging Queues - Apache Kafka, Rabbit MQ, Amazon SQS
+12. Redirection Servers - Apache Tomcat, Jetty
+13. Others - Apache Zookeeper, Apache Storm
+
+
+
+Great References:
+
+
+
+1. What all should you prepare, for an Experienced Software Developer Interview? [HERE](https://www.evernote.com/shard/s576/client/snv?noteGuid=0d45fa65-7572-4147-8d0d-a70e413cb948&noteKey=c2397df181fa2646&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs576%2Fsh%2F0d45fa65-7572-4147-8d0d-a70e413cb948%2Fc2397df181fa2646&title=1.%2BWhat%2Ball%2Bshould%2Byou%2Bprepare%252C%2Bfor%2Ban%2BExperienced%2BSoftware%2BDeveloper%2BInterview%253F)
+
+
+
+
+2. System Design Interviews - WHERE, WHAT, HOW [HERE](https://www.evernote.com/shard/s576/client/snv?noteGuid=75fbe53c-baed-47ca-9f58-a44038c63468&noteKey=05d51df458ea2cff&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs576%2Fsh%2F75fbe53c-baed-47ca-9f58-a44038c63468%2F05d51df458ea2cff&title=2.%2BSystem%2BDesign%2BInterviews%2B-%2BWHERE%252C%2BWHAT%252C%2BHOW)
+
+   
+
+
+3. Problem Solving Interviews - WHAT [HERE](https://www.evernote.com/shard/s576/client/snv?noteGuid=bfce91dd-a608-4d51-b303-97d0acb678b6&noteKey=527974f71448fc88&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs576%2Fsh%2Fbfce91dd-a608-4d51-b303-97d0acb678b6%2F527974f71448fc88&title=3.%2BProblem%2BSolving%2BInterviews%2B-%2BWHAT)
+
+
+
+
+
+4. Problem Solving Interviews - WHERE [HERE](https://www.evernote.com/shard/s576/client/snv?noteGuid=ca644d7e-6131-4bd4-a06c-b45c3e5708cc&noteKey=fe0237c65ca707f5&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs576%2Fsh%2Fca644d7e-6131-4bd4-a06c-b45c3e5708cc%2Ffe0237c65ca707f5&title=4.%2BProblem%2BSolving%2BInterviews%2B-%2BWHERE)
+
+
+
+
+
 
 
